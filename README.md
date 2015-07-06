@@ -76,7 +76,8 @@ The code above accomplishes three things:
 
     Monster.prototype.swimAbility = 10;
     var kaiju = new Monster();
-    kaiju.swimAbility; // 10
+    kaiju.swimAbility;
+    // => 10
     ```
     
     - What does it mean when an object delegates to a prototype for a constructor? It simply just means that, if a property does not yet exist for a specific object `monster`, it will simply give those properties to the object based on how that property is defined on the prototype. So when a `monster` object is instantiated, and a property `swimAbility` doesn't exist yet on instantiation, it will be given that property from `Monster.prototype`.
