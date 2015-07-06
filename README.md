@@ -63,8 +63,17 @@ The code above accomplishes three things:
     - A function is a unique kind of object in Javascript, and has properties. Functions, by default, get a prototype property. It is always an empty hash. A prototype property is empty when a Javascript object is initialized, and you can add properties to the prototype in 2 ways:
 
     ```javascript
+    function Robot() {
+    }
+    
     // prototype property definition - method 1
-    Robot.prototype.dance = function(){ console.log("Harder, Better, Faster, Stronger.") }
+    Robot.prototype.dance = function(){ 
+      console.log("Harder, Better, Faster, Stronger.") 
+    }
+    
+    var daftPunkRobot = new Robot();
+    daftPunkRobot.dance
+    // this will print the string "Harder, Better, Faster, Stronger." to the console
     ```
 
     - When an object is constructed (via the `new` keyword), it automatically inherits all of the properties of the object constructor's prototype. 
