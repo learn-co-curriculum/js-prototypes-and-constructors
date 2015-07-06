@@ -1,6 +1,6 @@
-# Objects in Javascript
+# Objects in JavaScript
 
-Objects in Javascript generally refer to the `Prototype`/`Instance` object model. THese are very similar to other object oriented languages (like Ruby), but the inner mechanics are also fundamentally different.
+Objects in JavaScript generally refer to the `Prototype`/`Instance` object model. These are very similar to other object oriented languages (like Ruby), but the inner mechanics are also fundamentally different.
 
 ## Types in JS
 
@@ -16,7 +16,7 @@ There are 5 specific non-object types in Javascript:
 
 ## Accessing Properties in JS
 
-There are several ways we can access a property of an object. Instead of explaining them explicitly, I'm just going to list them below:
+There are a couple different ways we can access a property of an object. Instead of explaining them explicitly, I'm just going to list them below:
 
 ```javascript
 var objWithProps = { color: 'red', name: 'Ian' };
@@ -28,22 +28,17 @@ var objColor = objWithProps.color;
 // second method
 var objColor = objWithProps["color"];
 //=> "red"
-
-// third method
-var x = "color";
-var objColor = objWithProps[x];
-//=> "red"
 ```
 
 ## Constructors and Prototypes
 
-In Javascript, the concept of a `class` doesn't exist like it does in Ruby.
+In JavaScript, the concept of a `class` doesn't exist like it does in Ruby.
 
 ![wat?](http://i0.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535)
 
-What we do have, though, are Javascript objects. They consist of a constructor and a prototype.
+What we do have, though, are JavaScript objects. They consist of a constructor and a prototype.
 
-What is a constructor? A constructor, simply put, is a function that is used as a constructor, meaning that it is a function that will be built upon with additional functionality (through prototypes). The only thing that makes a constructor a constructor function is the fact that the function's name is capitalized. This is a convention for constructors in Javascript. There's no magic power associated with a function name that's capitalized - it's just simply a convention.
+What is a constructor? A constructor, simply put, is a function that is used as a constructor, meaning that it is a function that will be built upon with additional functionality (through prototypes). The only thing that makes a constructor a constructor function is the fact that the function's name is capitalized. This is a convention for constructors in JavaScript. There's no magic power associated with a function name that's capitalized - it's just simply a convention.
 
 ```javascript
 function Robot(){
@@ -79,12 +74,12 @@ The code above accomplishes three things:
       //...
     }
 
-    Monster.prototype.swim_ability = 10;
+    Monster.prototype.swimAbility = 10;
     var kaiju = new Monster();
-    kaiju.swim_ability; // 10
+    kaiju.swimAbility; // 10
     ```
     
-    - What does it mean when an object delegates to a prototype for a constructor? It simply just means that, if a property does not yet exist for a specific object `monster`, it will simply give those properties to the object based on how that property is defined on the prototype. So when a `monster` object is instantiated, and a property `swim_ability` doesn't exist yet on instantiation, it will be given that property from `Monster.prototype`.
+    - What does it mean when an object delegates to a prototype for a constructor? It simply just means that, if a property does not yet exist for a specific object `monster`, it will simply give those properties to the object based on how that property is defined on the prototype. So when a `monster` object is instantiated, and a property `swimAbility` doesn't exist yet on instantiation, it will be given that property from `Monster.prototype`.
 
 ## Resources
 
