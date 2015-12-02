@@ -94,3 +94,5 @@ The code above accomplishes three things:
 ## Resources
 
 * [Pivotal Labs](http://pivotallabs.com) - [Constructors and Prototypes](http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword/)
+
+<a href='https://learn.co/lessons/js-prototypes-and-constructors' data-visibility='hidden'>View this lesson on Learn.co</a>
