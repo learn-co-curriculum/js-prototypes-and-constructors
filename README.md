@@ -95,4 +95,4 @@ The code above accomplishes three things:
 
 * [Pivotal Labs](http://pivotallabs.com) - [Constructors and Prototypes](http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword/)
 
-<a href='https://learn.co/lessons/js-prototypes-and-constructors' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-prototypes-and-constructors' title='Objects in JavaScript'>Objects in JavaScript</a> on Learn.co and start learning to code for free.</p>
